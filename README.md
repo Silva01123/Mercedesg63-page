@@ -40,3 +40,6 @@ A página traz um layout moderno, elegante e responsivo, com foco em:
 1. Clone o repositório:
    ```bash
    git clone  https://github.com/Silva01123/Mercedesg63-page.git
+
+2. Acesse Online
+git clone  https://github.com/Silva01123/Mercedesg63-page.git
