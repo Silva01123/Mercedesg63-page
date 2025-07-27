@@ -1,33 +1,38 @@
-# 🚙 Mercedes G63 Experience
+# 🚘 Mercedes G63 Experience
 
-Bem-vindo(a) ao **Mercedes G63 Experience**, uma landing page desenvolvida com foco em **HTML** e **CSS**, como parte dos meus estudos em desenvolvimento front-end.
-
-Este projeto representa uma experiência digital inspirada no visual e na potência da Mercedes G63 AMG, combinando design elegante, semântica e responsividade.
+Projeto front-end desenvolvido com **HTML**, **CSS** e **TypeScript**, apresentando uma experiência interativa e visual com o modelo Mercedes-Benz AMG G63 - 2025. O projeto simula uma vitrine digital de um carro de luxo, destacando suas principais características técnicas e visuais.
 
 ---
 
-## 🧠 Sobre o Projeto
+## 📸 Visão Geral
 
-A ideia foi criar uma página visualmente atrativa, funcional e sem uso de JavaScript, utilizando apenas tecnologias básicas da web.
+A página traz um layout moderno, elegante e responsivo, com foco em:
 
-> 💡 **Objetivo**: Praticar estruturação HTML semântica e estilização CSS para consolidar fundamentos de front-end.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- Design Responsivo
-- Git e GitHub Pages
+- Navegação superior intuitiva  
+- Botões interativos que exibem detalhes específicos do veículo  
+- Destaques técnicos apresentados em cards  
+- Animações suaves para realce da experiência do usuário  
 
 ---
 
-## 📸 Preview do Projeto
+## 🧑‍💻 Tecnologias Utilizadas
 
-![Mercedes G63 Preview](https://via.placeholder.com/800x400.png?text=Preview+da+Landing+Page)
+- **HTML5** – Estrutura semântica da página  
+- **CSS3** – Estilização avançada e responsiva  
+- **TypeScript** – Comportamento dinâmico e seguro no front-end *(removido se não estiver usando)*  
+- **JavaScript (compilado)** – Código final gerado a partir do TypeScript  
+- **VSCode + Live Server** – Ambiente de desenvolvimento local  
 
 ---
+
+## 🧩 Funcionalidades
+
+- Exibição de imagem do carro com estilo e responsividade  
+- Botões superiores para explorar partes do carro (Motor, Teto Solar, Rodas, Escapamento)  
+- Botões laterais para explorar categorias como Performance, Design, Luxo, etc.  
+- Destaque dinâmico com conteúdo alterado via TypeScript  
+- Layout adaptável para desktop, tablet e mobile
+  
 
 ## 🔗 Acesse o Projeto
 
