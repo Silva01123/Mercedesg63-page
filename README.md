@@ -38,5 +38,6 @@ A página traz um layout moderno, elegante e responsivo, com foco em:
 
 ```bash
 git clone https://github.com/Silva01123/Mercedesg63-page.git
-cd Mercedesg63-page
-# abra o index.html com Live Server ou direto no navegador
+
+👉 [Clique aqui para ver o projeto funcionando no GitHub Pages](https://silva01123.github.io/Mercedesg63-page/)
+
