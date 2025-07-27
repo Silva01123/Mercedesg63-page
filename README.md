@@ -42,4 +42,4 @@ A página traz um layout moderno, elegante e responsivo, com foco em:
    git clone  https://github.com/Silva01123/Mercedesg63-page.git
 
 2. Acesse Online
-git clone  https://github.com/Silva01123/Mercedesg63-page.git
+git clone  Mercedes G63 Experience no GitHub Pages
