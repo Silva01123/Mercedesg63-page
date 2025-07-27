@@ -19,7 +19,7 @@ A página traz um layout moderno, elegante e responsivo, com foco em:
 
 - **HTML5** – Estrutura semântica da página  
 - **CSS3** – Estilização avançada e responsiva  
-- **TypeScript** – Comportamento dinâmico e seguro no front-end *(removido se não estiver usando)*  
+- **TypeScript** – Comportamento dinâmico e seguro no front-end 
 - **JavaScript (compilado)** – Código final gerado a partir do TypeScript  
 - **VSCode + Live Server** – Ambiente de desenvolvimento local  
 
