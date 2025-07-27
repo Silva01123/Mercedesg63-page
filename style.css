@@ -1,0 +1,347 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0c0c;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ========== CABEÇALHO ========== */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #d4af37;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+
+/* ========== SEÇÃO PRINCIPAL ========== */
+.car-section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.marca {
+  display: flex;            /* coloca logo e texto lado a lado */
+  align-items: center;      /* alinha no centro verticalmente */
+  gap: 10px;                /* espaçamento entre logo e texto */
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+.logo-marca {
+  width: 40px;              /* largura da logo */
+  height: 40px;             /* altura da logo */
+  border-radius: 50%;       /* deixa ela circular */
+  object-fit: cover;        /* ajusta a imagem dentro da área */
+}
+
+/* Menu lateral */
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-menu button {
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #d4af37;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+.side-menu button:hover {
+  background-color: #d4af37;
+  color: #0c0c0c;
+  box-shadow: 0 0 12px #d4af37cc;
+}
+
+.side-menu .active {
+  background-color: #1a1a1a;
+  color: #d4af37;
+  box-shadow: none;
+}
+
+/* Conteúdo principal */
+.car-display {
+  flex: 1;
+  position: relative;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.car-display h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.car-name {
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagem do carro */
+
+.car-visual {
+  display: flex;
+  align-items: center;
+}
+
+.car-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.car-image {
+  width: 100%;
+  max-height: 80vh; /* impede que ocupe mais de 80% da tela */
+  object-fit: contain; /* mostra a imagem inteira SEM cortar */
+  display: block;
+  transition: transform 0.5s ease;
+  filter: brightness(1.2) contrast(1.2);
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+
+
+.car-image-container:hover .car-image {
+  transform: scale(1.01);
+}
+
+/* Contêiner para os botões horizontais */
+.car-part-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1rem; /* espaço entre imagem e botões */
+  align-self: center; /* centraliza verticalmente */
+}
+
+
+
+.car-part-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(26, 26, 26, 0.8); /* Cor de fundo semi-transparente */
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #d4af3788;
+  font-weight: 500;
+}
+
+
+.car-part-btn:hover {
+  background-color: #d4af37;
+  color: #000;
+  box-shadow: 0 0 20px #d4af37cc;
+}
+
+/* Bloco destaque */
+.highlight-box {
+  background-color: #111;
+  padding: 1.5rem;
+  border-left: 5px solid #d4af37;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+  max-width: 600px;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+
+.highlight-box h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.highlight-box p {
+  color: #ccc;
+}
+
+/* Cards com dados técnicos */
+.feature-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #0f0f0f;
+  box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.05);
+}
+
+.feature-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(212, 175, 55, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2c2c2c;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+}
+
+.feature-card h4 {
+  margin-bottom: 0.3rem;
+  color: #d4af37;
+}
+
+.feature-card p {
+  color: #eee;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+  .car-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .car-part-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin: 1rem 0;
+  }
+
+  .car-image-container {
+    max-width: 100%;
+  }
+
+  .highlight-box {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .feature-highlights {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .marca {
+    font-size: 1.2rem;
+  }
+
+  .logo-marca {
+    width: 30px;
+    height: 30px;
+  }
+
+  .car-name {
+    font-size: 1rem;
+  }
+
+  .car-part-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .highlight-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .highlight-box p {
+    font-size: 0.95rem;
+  }
+
+  .feature-card h4 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}
